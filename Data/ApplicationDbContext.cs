@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using Shortcutt.Models;
 
 namespace Shortcutt.Data
 {
@@ -9,5 +10,7 @@ namespace Shortcutt.Data
             : base(options)
         {
         }
+        public DbSet<Post> Posts { get; set; }
+
     }
 }
